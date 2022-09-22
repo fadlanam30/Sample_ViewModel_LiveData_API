@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.upload.UploadUserActivity">
+
+    <TextView
+        android:id="@+id/user_upload_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload User"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/user_input_name_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input user name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_upload_tv"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/upload_name_user_input"
+        android:hint="Lorem Ipsum Dolor"
+        android:inputType="text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/user_input_name_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/user_input_email_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input email user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upload_name_user_input"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/upload_email_user_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Lorem@ipsum"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/user_input_email_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/upload_data_user_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Submit user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upload_email_user_input"/>
+
+    <TextView
+        android:id="@+id/upload_in_progress_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload in progres..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upload_data_user_btn"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/upload_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/upload_in_progress_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

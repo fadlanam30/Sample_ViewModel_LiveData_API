@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.UserActivity">
+
+    <TextView
+        android:id="@+id/user_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Information"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/user_photo_detail_iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@id/user_detail_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/user_detail_firstname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/user_photo_detail_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Nama awalnya dia"/>
+
+    <TextView
+        android:id="@+id/user_detail_lastname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/user_detail_firstname_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Nama akhirnya"/>
+
+    <TextView
+    android:id="@+id/user_detail_email_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:textSize="18sp"
+    app:layout_constraintTop_toBottomOf="@id/user_detail_lastname_tv"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:text="Emailnya si dia!"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

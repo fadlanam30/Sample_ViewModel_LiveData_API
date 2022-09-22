@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <Button
+        android:id="@+id/btn_get_listusers"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Ambil List User"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_get_user"
+        android:layout_marginTop="250dp"
+        />
+
+    <Button
+        android:id="@+id/btn_get_user"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Cek User"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_get_listusers"
+        app:layout_constraintBottom_toTopOf="@+id/btn_upload_user"
+        />
+
+    <Button
+        android:id="@+id/btn_upload_user"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Unggah User"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_get_user"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
